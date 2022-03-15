@@ -11,16 +11,16 @@ Model:
 
 Routes:
 
-GET "/api/tutorials/" -> Get all tutorials
-GET "/api/tutorials/:id" -> Get a tutorial by id.
-GET "/api/tutorials/published/" -> Get all tutorials that are published.
+- GET "/api/tutorials/" -> Get all tutorials
+- GET "/api/tutorials/:id" -> Get a tutorial by id.
+- GET "/api/tutorials/published/" -> Get all tutorials that are published.
 
-POST "/api/tutorials/" -> Post a tutorial to the database
+- POST "/api/tutorials/" -> Post a tutorial to the database
 
-PUT "/api/tutorials/:id" -> Update a tutorial (Requires all tutorial body content)
+- PUT "/api/tutorials/:id" -> Update a tutorial (Requires all tutorial body content)
 
-DELETE "/api/tutorials/" -> Delete all tutorials
-DELETE "/api/tutorials/:id" -> Deletes a tutorial based on id.
+- DELETE "/api/tutorials/" -> Delete all tutorials
+- DELETE "/api/tutorials/:id" -> Deletes a tutorial based on id.
 
 
 Packages Used:
