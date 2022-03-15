@@ -1,5 +1,5 @@
 {
-  "name": "mysql_rest_api",
+  "name": "mysql-rest-api",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
