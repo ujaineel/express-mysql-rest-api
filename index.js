@@ -2,7 +2,6 @@ const express = require("express");
 const cors = require("cors");
 const mysql = require("mysql2");
 const morgan = require("helmet");
-const PORT = process.env.PORT || 8000;
 
 const tutorialRoutes = require("./app/routes/tutorial.routes");
 
@@ -25,6 +24,6 @@ app.get('*', (req, res) => {
     res.json({ message: "Error. Where are you heading ?"})
 });
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT || 8000, () => {
     console.log(`MySQL REST API running at RDS:${PORT}`);
 });
