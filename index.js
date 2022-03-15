@@ -3,15 +3,14 @@ require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
 const mysql = require("mysql2");
-const morgan = require("morgan");
+const morgan = require("helmet");
 const PORT = process.env.PORT || 8000;
 
 const tutorialRoutes = require("./app/routes/tutorial.routes");
-const res = require("express/lib/response");
 
 const app = express();
 
-app.use(morgan('tiny'));
+app.use(helmet());
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({
@@ -29,5 +28,5 @@ app.get('*', (req, res) => {
 });
 
 app.listen(PORT, () => {
-    console.log(`MySQL REST API running at localhost:${PORT}`);
+    console.log(`MySQL REST API running at RDS:${PORT}`);
 });
