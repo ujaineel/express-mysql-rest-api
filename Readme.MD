@@ -1,4 +1,5 @@
-Link: https://experienced-rogue-avatar.glitch.me/api/tutorials
+Bankend endpoint: https://experienced-rogue-avatar.glitch.me/api/tutorials
+Front-end Connection Link: https://tutorials-my-sql-front-end-ujaineel.vercel.app/
 
 Created a basic REST Api using Express.JS. The database used is a AWS RDS MySQL database.
 
