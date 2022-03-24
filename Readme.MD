@@ -1,4 +1,4 @@
-Link: https://mysql-rest-api-express.herokuapp.com/
+Link: https://experienced-rogue-avatar.glitch.me/api/tutorials
 
 Created a basic REST Api using Express.JS. The database used is a AWS RDS MySQL database.
 
